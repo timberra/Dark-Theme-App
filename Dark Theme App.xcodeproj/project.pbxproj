@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA676F722AE00B3400673DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA676F712AE00B3400673DA7 /* AppDelegate.swift */; };
 		FA676F742AE00B3400673DA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA676F732AE00B3400673DA7 /* SceneDelegate.swift */; };
-		FA676F762AE00B3400673DA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA676F752AE00B3400673DA7 /* ViewController.swift */; };
+		FA676F762AE00B3400673DA7 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA676F752AE00B3400673DA7 /* ThemeViewController.swift */; };
 		FA676F792AE00B3400673DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA676F772AE00B3400673DA7 /* Main.storyboard */; };
 		FA676F7B2AE00B3600673DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA676F7A2AE00B3600673DA7 /* Assets.xcassets */; };
 		FA676F7E2AE00B3600673DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA676F7C2AE00B3600673DA7 /* LaunchScreen.storyboard */; };
+		FA676F8A2AE01A2800673DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA676F712AE00B3400673DA7 /* AppDelegate.swift */; };
+		FA676F8C2AE1535500673DA7 /* UIHexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA676F8B2AE1535500673DA7 /* UIHexColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA676F6E2AE00B3400673DA7 /* Dark Theme App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Theme App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA676F712AE00B3400673DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA676F732AE00B3400673DA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA676F752AE00B3400673DA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA676F752AE00B3400673DA7 /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		FA676F782AE00B3400673DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA676F7A2AE00B3600673DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA676F7D2AE00B3600673DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA676F7F2AE00B3600673DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA676F8B2AE1535500673DA7 /* UIHexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHexColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		FA676F702AE00B3400673DA7 /* Dark Theme App */ = {
 			isa = PBXGroup;
 			children = (
-				FA676F712AE00B3400673DA7 /* AppDelegate.swift */,
-				FA676F732AE00B3400673DA7 /* SceneDelegate.swift */,
-				FA676F752AE00B3400673DA7 /* ViewController.swift */,
-				FA676F772AE00B3400673DA7 /* Main.storyboard */,
+				FA676F862AE00CE500673DA7 /* Model */,
+				FA676F852AE00B9B00673DA7 /* AppDelegate */,
+				FA676F872AE00CEE00673DA7 /* View */,
+				FA676F882AE00D9C00673DA7 /* Controller */,
 				FA676F7A2AE00B3600673DA7 /* Assets.xcassets */,
-				FA676F7C2AE00B3600673DA7 /* LaunchScreen.storyboard */,
+				FA676F8B2AE1535500673DA7 /* UIHexColor.swift */,
 				FA676F7F2AE00B3600673DA7 /* Info.plist */,
 			);
 			path = "Dark Theme App";
+			sourceTree = "<group>";
+		};
+		FA676F852AE00B9B00673DA7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA676F712AE00B3400673DA7 /* AppDelegate.swift */,
+				FA676F732AE00B3400673DA7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FA676F862AE00CE500673DA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA676F872AE00CEE00673DA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA676F772AE00B3400673DA7 /* Main.storyboard */,
+				FA676F7C2AE00B3600673DA7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA676F882AE00D9C00673DA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA676F752AE00B3400673DA7 /* ThemeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA676F762AE00B3400673DA7 /* ViewController.swift in Sources */,
-				FA676F722AE00B3400673DA7 /* AppDelegate.swift in Sources */,
+				FA676F8A2AE01A2800673DA7 /* AppDelegate.swift in Sources */,
+				FA676F8C2AE1535500673DA7 /* UIHexColor.swift in Sources */,
+				FA676F762AE00B3400673DA7 /* ThemeViewController.swift in Sources */,
 				FA676F742AE00B3400673DA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,12 +326,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dark Theme App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -303,7 +340,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.accentureboothcamp-lg.Dark-Theme-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -317,12 +354,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dark Theme App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -330,7 +368,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.accentureboothcamp-lg.Dark-Theme-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
